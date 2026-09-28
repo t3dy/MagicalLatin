@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magical Latin: A Reader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header id="site-header">
+  <div class="header-left">
+    <h1 class="site-title">Magical Latin</h1>
+    <span class="subtitle">A Reader in the Occult Tradition</span>
+  </div>
+  <div class="header-center">
+    <div class="xp-area">
+      <div class="level-badge" id="level-badge">Novice Scribe</div>
+      <div class="xp-bar-wrap">
+        <div class="xp-bar-inner" id="xp-bar"></div>
+      </div>
+      <div class="xp-label" id="xp-label">0 / 100 XP</div>
+    </div>
+  </div>
+  <div class="header-right">
+    <button class="header-btn" id="btn-flashcards">🔤 Quiz</button>
+    <button class="header-btn" id="btn-alchemy">⚗ Alchemy Lab</button>
+    <button class="header-btn" id="btn-stats">📜 Codex</button>
+    <button class="header-btn" id="btn-readlist">📖 Read List</button>
+    <button class="header-btn" id="btn-bibliography">📚 Bibliography</button>
+  </div>
+</header>
+
+<!-- Main layout -->
+<div class="layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <h3 class="sidebar-heading">Filter by Era</h3>
+      <label class="filter-check"><input type="checkbox" class="filter-era" value="ancient" checked> Ancient / Late Antique</label>
+      <label class="filter-check"><input type="checkbox" class="filter-era" value="medieval" checked> Medieval</label>
+      <label class="filter-check"><input type="checkbox" class="filter-era" value="renaissance" checked> Renaissance</label>
+    </div>
+    <div class="sidebar-section">
+      <h3 class="sidebar-heading">Filter by Tradition</h3>
+      <div id="tradition-filters"></div>
+    </div>
+    <div class="sidebar-section">
+      <h3 class="sidebar-heading">Filter by Difficulty</h3>
+      <div class="diff-filter-row">
+        <span class="diff-label">Max:</span>
+        <input type="range" id="diff-slider" min="1" max="5" value="5">
+        <span id="diff-value">5 ✦</span>
+      </div>
+    </div>
+    <div class="sidebar-section">
+      <h3 class="sidebar-heading">Show Only</h3>
+      <label class="filter-check"><input type="checkbox" id="filter-read-list"> In Read List</label>
+      <label class="filter-check"><input type="checkbox" id="filter-has-ritual"> Has Ritual</label>
+      <label class="filter-check"><input type="checkbox" id="filter-unread"> Not Yet Read</label>
+    </div>
+    <div class="sidebar-section">
+      <h3 class="sidebar-heading">Search</h3>
+      <input type="text" id="search-box" class="search-box" placeholder="Search Latin or title...">
+    </div>
+    <div class="sidebar-section stats-mini" id="sidebar-stats">
+      <h3 class="sidebar-heading">Your Progress</h3>
+      <div class="stat-row"><span class="stat-icon">📖</span> <span id="stat-passages-read">0</span> passages read</div>
+      <div class="stat-row"><span class="stat-icon">🔤</span> <span id="stat-words-clicked">0</span> words looked up</div>
+      <div class="stat-row"><span class="stat-icon">📝</span> <span id="stat-translated">0</span> translated</div>
+      <div class="stat-row"><span class="stat-icon">🕯</span> <span id="stat-rituals">0</span> rituals performed</div>
+      <div class="stat-row"><span class="stat-icon">⚗</span> <span id="stat-experiments">0</span> experiments done</div>
+    </div>
+  </aside>
+
+  <!-- Card Grid -->
+  <main class="card-grid" id="card-grid"></main>
+
+</div>
+
+<!-- ===== EXPANDED PASSAGE MODAL ===== -->
+<div class="modal-overlay" id="passage-modal" hidden>
+  <div class="modal-box modal-passage">
+    <button class="modal-close" id="passage-close">✕</button>
+    <div class="passage-header">
+      <div class="passage-meta-top">
+        <span class="tradition-chip" id="pm-tradition"></span>
+        <span class="era-chip" id="pm-era"></span>
+        <span class="diff-dots" id="pm-diff"></span>
+      </div>
+      <h2 class="passage-title" id="pm-title"></h2>
+      <div class="passage-meta-sub" id="pm-meta"></div>
+      <div class="passage-nav-area">
+        <button class="passage-nav-btn" id="passage-prev">◀ Prev</button>
+        <span class="passage-nav-label" id="passage-nav-label"></span>
+        <button class="passage-nav-btn" id="passage-next">Next ▶</button>
+      </div>
+    </div>
+
+    <div class="passage-body">
+      <!-- Level controls -->
+      <div class="scaffold-bar">
+        <span class="scaffold-label">Aid Level:</span>
+        <div class="scaffold-btns">
+          <button class="scaf-btn active" data-level="full">Full</button>
+          <button class="scaf-btn" data-level="hover">Hover</button>
+          <button class="scaf-btn" data-level="none">None</button>
+          <button class="scaf-btn" data-level="interlinear">Interlinear</button>
+        </div>
+        <span class="scaffold-note" id="scaf-note">Click any Latin word for its definition.</span>
+      </div>
+
+      <!-- Latin text (word-clickable) -->
+      <div class="latin-passage-wrap">
+        <h3 class="passage-section-label">Textus Latinus</h3>
+        <div class="latin-passage" id="pm-latin"></div>
+      </div>
+
+      <!-- English gloss (collapsible) -->
+      <div class="gloss-section" id="gloss-section">
+        <button class="gloss-toggle" id="gloss-toggle">▶ English Translation</button>
+        <div class="gloss-body" id="pm-gloss" hidden></div>
+      </div>
+
+      <!-- Vocabulary panel -->
+      <div class="vocab-section">
+        <h3 class="passage-section-label">Vocabularium</h3>
+        <div class="vocab-grid" id="pm-vocab"></div>
+      </div>
+
+      <!-- Source notes -->
+      <div class="notes-section" id="notes-section">
+        <h3 class="passage-section-label">Notae</h3>
+        <p class="notes-text" id="pm-notes"></p>
+      </div>
+    </div>
+
+    <!-- Action bar -->
+    <div class="passage-actions">
+      <button class="action-btn btn-readlist-toggle" id="pm-readlist-btn">☐ Add to Read List</button>
+      <button class="action-btn btn-mark-read" id="pm-mark-read">✓ Mark Read (+10 XP)</button>
+      <button class="action-btn btn-mark-translated" id="pm-mark-translated">⟺ Mark Translated (+25 XP)</button>
+      <button class="action-btn btn-ritual" id="pm-ritual-btn" hidden>⊕ Begin Ritual</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== WORD TOOLTIP ===== -->
+<div class="word-tooltip" id="word-tooltip" hidden>
+  <div class="tooltip-word" id="tip-word"></div>
+  <div class="tooltip-lemma" id="tip-lemma"></div>
+  <div class="tooltip-def" id="tip-def"></div>
+</div>
+
+<!-- ===== RITUAL MODAL ===== -->
+<div class="modal-overlay" id="ritual-modal" hidden>
+  <div class="modal-box modal-ritual">
+    <button class="modal-close" id="ritual-close">✕</button>
+    <div class="ritual-header">
+      <div class="ritual-source" id="ritual-source"></div>
+      <h2 class="ritual-title" id="ritual-title"></h2>
+      <p class="ritual-desc" id="ritual-desc"></p>
+      <div class="ritual-progress-bar">
+        <div class="ritual-progress-inner" id="ritual-progress"></div>
+      </div>
+      <div class="ritual-step-label" id="ritual-step-label">Step 1 of 7</div>
+    </div>
+    <div class="ritual-step-body">
+      <div class="step-type-chip" id="step-type-chip"></div>
+      <h3 class="step-title" id="step-title"></h3>
+      <div class="step-latin" id="step-latin"></div>
+      <div class="step-english" id="step-english"></div>
+      <div class="step-action" id="step-action"></div>
+    </div>
+    <div class="ritual-actions">
+      <button class="ritual-btn" id="ritual-prev" disabled>◀ Previous</button>
+      <button class="ritual-btn ritual-btn-primary" id="ritual-perform">Perform This Step ✓</button>
+      <button class="ritual-btn" id="ritual-next">Next ▶</button>
+    </div>
+    <div class="ritual-complete" id="ritual-complete" hidden>
+      <div class="complete-star">✦</div>
+      <h3>Ritual Complete</h3>
+      <p id="ritual-xp-msg"></p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ALCHEMY LAB MODAL ===== -->
+<div class="modal-overlay" id="alchemy-modal" hidden>
+  <div class="modal-box modal-alchemy">
+    <button class="modal-close" id="alchemy-close">✕</button>
+    <h2 class="alchemy-title">⚗ Laboratorium Alchymicum</h2>
+    <p class="alchemy-subtitle">Selige substantiam et operationem — Select a substance and an operation</p>
+    <div class="alchemy-layout">
+      <div class="alchemy-substances">
+        <h3 class="alch-section-head">Substantiae</h3>
+        <div class="substance-list" id="substance-list"></div>
+      </div>
+      <div class="alchemy-workspace">
+        <div class="workspace-display">
+          <div class="workspace-substance" id="ws-substance">—</div>
+          <div class="workspace-arrow">+</div>
+          <div class="workspace-operation" id="ws-operation">—</div>
+          <div class="workspace-arrow">=</div>
+          <div class="workspace-result" id="ws-result">?</div>
+        </div>
+        <div class="alch-latin-desc" id="alch-latin-desc"></div>
+        <div class="alch-result-desc" id="alch-result-desc"></div>
+        <button class="alch-perform-btn" id="alch-perform" disabled>Perfice Operationem ⚗</button>
+      </div>
+      <div class="alchemy-operations">
+        <h3 class="alch-section-head">Operationes</h3>
+        <div class="operation-list" id="operation-list"></div>
+      </div>
+    </div>
+    <div class="alch-history">
+      <h3 class="alch-section-head">Historia Experimenti</h3>
+      <div id="alch-history-list"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== STATS / CODEX MODAL ===== -->
+<div class="modal-overlay" id="stats-modal" hidden>
+  <div class="modal-box modal-stats">
+    <button class="modal-close" id="stats-close">✕</button>
+    <h2 class="stats-title">📜 Codex — Your Record</h2>
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-big" id="st-xp">0</div><div class="stat-name">Total XP</div></div>
+      <div class="stat-card"><div class="stat-big" id="st-level">1</div><div class="stat-name">Level</div></div>
+      <div class="stat-card"><div class="stat-big" id="st-words">0</div><div class="stat-name">Words Looked Up</div></div>
+      <div class="stat-card"><div class="stat-big" id="st-read">0</div><div class="stat-name">Passages Read</div></div>
+      <div class="stat-card"><div class="stat-big" id="st-translated">0</div><div class="stat-name">Passages Translated</div></div>
+      <div class="stat-card"><div class="stat-big" id="st-rituals">0</div><div class="stat-name">Rituals Performed</div></div>
+      <div class="stat-card"><div class="stat-big" id="st-experiments">0</div><div class="stat-name">Experiments Done</div></div>
+      <div class="stat-card"><div class="stat-big" id="st-readlist">0</div><div class="stat-name">In Read List</div></div>
+    </div>
+    <div class="achievements-section">
+      <h3>Achievements</h3>
+      <div class="achievement-list" id="achievement-list"></div>
+    </div>
+    <button class="danger-btn" id="btn-reset">⚠ Reset All Progress</button>
+  </div>
+</div>
+
+<!-- ===== READ LIST MODAL ===== -->
+<div class="modal-overlay" id="readlist-modal" hidden>
+  <div class="modal-box modal-readlist">
+    <button class="modal-close" id="readlist-close">✕</button>
+    <h2 class="readlist-title">📖 Your Read List</h2>
+    <div id="readlist-contents"></div>
+  </div>
+</div>
+
+<!-- ===== FLASHCARD QUIZ MODAL ===== -->
+<div class="modal-overlay" id="flashcard-modal" hidden>
+  <div class="modal-box modal-flashcard">
+    <button class="modal-close" id="flashcard-close">✕</button>
+    <div class="flashcard-header">
+      <h2 class="flashcard-title">🔤 Vocabularium</h2>
+      <div class="flashcard-progress" id="fc-progress">0 / 0</div>
+    </div>
+    <div class="flashcard-card">
+      <div class="fc-word" id="fc-word">—</div>
+      <div class="fc-prompt" id="fc-prompt">What does this word mean?</div>
+      <div class="fc-lemma" id="fc-lemma" hidden></div>
+      <div class="fc-definition" id="fc-definition" hidden></div>
+    </div>
+    <button class="fc-reveal-btn" id="fc-reveal">Reveal Definition</button>
+    <div class="fc-score-btns" id="fc-score-btns" hidden>
+      <button class="fc-score-btn fc-btn-knew" id="fc-knew">✓ Knew It (+3 XP)</button>
+      <button class="fc-score-btn fc-btn-almost" id="fc-almost">~ Almost (+1 XP)</button>
+      <button class="fc-score-btn fc-btn-missed" id="fc-missed">✗ Missed</button>
+    </div>
+    <div class="fc-summary" id="fc-summary" hidden>
+      <h3>Quiz Complete ✦</h3>
+      <div class="fc-summary-stats" id="fc-summary-stats"></div>
+      <button class="fc-summary-restart" id="fc-restart">Restart Quiz</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== BIBLIOGRAPHY MODAL ===== -->
+<div class="modal-overlay" id="bibliography-modal" hidden>
+  <div class="modal-box modal-bibliography">
+    <button class="modal-close" id="bibliography-close">✕</button>
+    <h2 class="bibliography-title">📚 Bibliotheca — Sources of the Corpus</h2>
+    <div class="biblio-tabs">
+      <button class="biblio-tab active" data-section="primary">Primary Sources</button>
+      <button class="biblio-tab" data-section="secondary">Secondary Sources</button>
+      <button class="biblio-tab" data-section="by-tradition">By Tradition</button>
+      <button class="biblio-tab" data-section="all">All Sources</button>
+    </div>
+    <div class="biblio-search-row">
+      <input type="text" id="biblio-search" class="search-box" placeholder="Search bibliography...">
+    </div>
+    <div id="biblio-contents"></div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="dictionary.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

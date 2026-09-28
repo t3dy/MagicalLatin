@@ -1,0 +1,370 @@
+[
+  {
+    "filename": "horace_epodes.txt",
+    "title": "Epodi",
+    "author": "Q. Horatius Flaccus",
+    "tradition": "folk_magic",
+    "url": "https://www.thelatinlibrary.com/horace/ep.shtml",
+    "notes": "Epode 5 and 17: Canidia the witch — canonical Roman literary magic, love potions, necromancy"
+  },
+  {
+    "filename": "lucan_pharsalia_vi.txt",
+    "title": "Belli Civilis Liber VI",
+    "author": "M. Annaeus Lucanus",
+    "tradition": "necromancy",
+    "url": "https://www.thelatinlibrary.com/lucan/lucan6.shtml",
+    "notes": "The Erichtho episode (ll.507-830): most detailed necromancy scene in classical Latin"
+  },
+  {
+    "filename": "lucan_pharsalia_i.txt",
+    "title": "Belli Civilis Liber I",
+    "author": "M. Annaeus Lucanus",
+    "tradition": "divination",
+    "url": "https://www.thelatinlibrary.com/lucan/lucan1.shtml",
+    "notes": "Opening book with omens, prodigies, portents before the civil war"
+  },
+  {
+    "filename": "apuleius_met_i.txt",
+    "title": "Metamorphoseon Liber I",
+    "author": "L. Apuleius Madaurensis",
+    "tradition": "natural_magic",
+    "url": "https://www.thelatinlibrary.com/apuleius/apuleius1.shtml",
+    "notes": "Book I: Lucius arrives in Thessaly, tales of witchcraft, Meroe transforms traveler"
+  },
+  {
+    "filename": "apuleius_met_ii.txt",
+    "title": "Metamorphoseon Liber II",
+    "author": "L. Apuleius Madaurensis",
+    "tradition": "natural_magic",
+    "url": "https://www.thelatinlibrary.com/apuleius/apuleius2.shtml",
+    "notes": "Book II: Pamphile the witch, Lucius witnesses transformation, Thelyphron's tale"
+  },
+  {
+    "filename": "apuleius_met_iii.txt",
+    "title": "Metamorphoseon Liber III",
+    "author": "L. Apuleius Madaurensis",
+    "tradition": "natural_magic",
+    "url": "https://www.thelatinlibrary.com/apuleius/apuleius3.shtml",
+    "notes": "Book III: Lucius transformed into an ass by Pamphile's magical ointment"
+  },
+  {
+    "filename": "apuleius_met_xi.txt",
+    "title": "Metamorphoseon Liber XI",
+    "author": "L. Apuleius Madaurensis",
+    "tradition": "angelic_magic",
+    "url": "https://www.thelatinlibrary.com/apuleius/apuleius11.shtml",
+    "notes": "Book XI: Isis apparition, initiation into mysteries, Lucius restored — central text of religious magic"
+  },
+  {
+    "filename": "apuleius_de_deo_socratis.txt",
+    "title": "De Deo Socratis",
+    "author": "L. Apuleius Madaurensis",
+    "tradition": "demonology",
+    "url": "https://www.thelatinlibrary.com/apuleius/apuleius.deosocratis.shtml",
+    "notes": "Doctrine of intermediate daemons between gods and men — foundational for Agrippa and Renaissance demonology"
+  },
+  {
+    "filename": "apuleius_apologia.txt",
+    "title": "Apologia sive Pro se de Magia",
+    "author": "L. Apuleius Madaurensis",
+    "tradition": "classification",
+    "url": "https://www.thelatinlibrary.com/apuleius/apuleius.apol.shtml",
+    "notes": "Defense against charges of using magic — priceless document of Roman attitudes to magia"
+  },
+  {
+    "filename": "vergil_aeneid_iv.txt",
+    "title": "Aeneidos Liber IV",
+    "author": "P. Vergilius Maro",
+    "tradition": "folk_magic",
+    "url": "https://www.thelatinlibrary.com/vergil/aen4.shtml",
+    "notes": "Dido's funeral pyre as magic ritual (ll.474-521), cursing Aeneas — canonical magic in the Aeneid"
+  },
+  {
+    "filename": "vergil_aeneid_vi.txt",
+    "title": "Aeneidos Liber VI",
+    "author": "P. Vergilius Maro",
+    "tradition": "necromancy",
+    "url": "https://www.thelatinlibrary.com/vergil/aen6.shtml",
+    "notes": "Descent to the underworld: the Golden Bough, Sibyl, Hecate, the dead — most influential Latin katabasis"
+  },
+  {
+    "filename": "ovid_met_vii.txt",
+    "title": "Metamorphoseon Liber VII",
+    "author": "P. Ovidius Naso",
+    "tradition": "natural_magic",
+    "url": "https://www.thelatinlibrary.com/ovid/ovid.met7.shtml",
+    "notes": "Medea's incantation and herb-gathering (ll.179-293) — the fullest Latin account of witchcraft ritual"
+  },
+  {
+    "filename": "ovid_met_xiv.txt",
+    "title": "Metamorphoseon Liber XIV",
+    "author": "P. Ovidius Naso",
+    "tradition": "natural_magic",
+    "url": "https://www.thelatinlibrary.com/ovid/ovid.met14.shtml",
+    "notes": "Circe's magic, Picus transformed — Circe as archetype of the learned witch"
+  },
+  {
+    "filename": "tacitus_annals_ii.txt",
+    "title": "Annalium Liber II",
+    "author": "P. Cornelius Tacitus",
+    "tradition": "folk_magic",
+    "url": "https://www.thelatinlibrary.com/tacitus/tac.ann2.shtml",
+    "notes": "Annals 2: Germanicus's death by magic (defixiones, leaden tablets) — famous Roman magic trial"
+  },
+  {
+    "filename": "augustine_civ_dei_viii.txt",
+    "title": "De Civitate Dei Liber VIII",
+    "author": "Aurelius Augustinus",
+    "tradition": "demonology",
+    "url": "https://www.thelatinlibrary.com/augustine/civ8.shtml",
+    "notes": "Book 8: Demons as intermediaries (against Apuleius), Platonist demonology vs. Christianity"
+  },
+  {
+    "filename": "augustine_civ_dei_x.txt",
+    "title": "De Civitate Dei Liber X",
+    "author": "Aurelius Augustinus",
+    "tradition": "demonology",
+    "url": "https://www.thelatinlibrary.com/augustine/civ10.shtml",
+    "notes": "Book 10: Theurgy, Porphyry, true vs. false worship of intermediaries — key anti-theurgic text"
+  },
+  {
+    "filename": "vergil_ecloga_viii.txt",
+    "title": "Ecloga VIII",
+    "author": "P. Vergilius Maro",
+    "tradition": "folk_magic",
+    "url": "https://www.thelatinlibrary.com/vergil/ec8.shtml",
+    "notes": "Alphesiboeus's magic spell (Amaryllis draw-him-home ritual) — model for all Latin erotic magic"
+  },
+  {
+    "filename": "vergil_ecloga_i.txt",
+    "title": "Ecloga I",
+    "author": "P. Vergilius Maro",
+    "tradition": "folk_magic",
+    "url": "https://www.thelatinlibrary.com/vergil/ec1.shtml",
+    "notes": "First Eclogue — pastoral framing, dispossession; precedes the magic eclogues"
+  },
+  {
+    "filename": "ovid_amores_iii.txt",
+    "title": "Amorum Liber III",
+    "author": "P. Ovidius Naso",
+    "tradition": "folk_magic",
+    "url": "https://www.thelatinlibrary.com/ovid/ovid.amor3.shtml",
+    "notes": "Amores III.7 (impotence curse), III.3 (perjury and love magic in Roman elegy)"
+  },
+  {
+    "filename": "ovid_amores_i.txt",
+    "title": "Amorum Liber I",
+    "author": "P. Ovidius Naso",
+    "tradition": "folk_magic",
+    "url": "https://www.thelatinlibrary.com/ovid/ovid.amor1.shtml",
+    "notes": "Amores Book I — elegiac love, early magic references"
+  },
+  {
+    "filename": "cicero_de_divinatione_i.txt",
+    "title": "De Divinatione Liber Prior",
+    "author": "M. Tullius Cicero",
+    "tradition": "divination",
+    "url": "https://www.thelatinlibrary.com/cicero/divinatione1.shtml",
+    "notes": "Book I: Quintus defends divination — Stoic arguments for signs, omens, dreams, oracles"
+  },
+  {
+    "filename": "cicero_de_divinatione_ii.txt",
+    "title": "De Divinatione Liber Alter",
+    "author": "M. Tullius Cicero",
+    "tradition": "divination",
+    "url": "https://www.thelatinlibrary.com/cicero/divinatione2.shtml",
+    "notes": "Book II: Cicero refutes divination — Academic skepticism, rational critique of sortilege"
+  },
+  {
+    "filename": "pliny_nh_i.txt",
+    "title": "Naturalis Historia Liber I",
+    "author": "C. Plinius Secundus",
+    "tradition": "natural_magic",
+    "url": "https://www.thelatinlibrary.com/pliny.nh1.html",
+    "notes": "Book I: Preface and table of contents — Pliny's encyclopedic scope, frequently cited in magic tradition"
+  },
+  {
+    "filename": "seneca_medea.txt",
+    "title": "Medea",
+    "author": "L. Annaeus Seneca",
+    "tradition": "natural_magic",
+    "url": "https://www.thelatinlibrary.com/sen/sen.medea.shtml",
+    "notes": "Medea's magic monologue (Act IV) — most elaborate dramatic incantation in Latin, cited by Renaissance magicians"
+  },
+  {
+    "filename": "isidore_etym_viii.txt",
+    "title": "Etymologiarum Liber VIII",
+    "author": "Isidorus Hispalensis",
+    "tradition": "classification",
+    "url": "https://www.thelatinlibrary.com/isidore/8.shtml",
+    "notes": "Book 8 ch.9: De Magis — systematic classification of magic types; canonical medieval taxonomy"
+  },
+  {
+    "filename": "lucretius_drn_i.txt",
+    "title": "De Rerum Natura Liber I",
+    "author": "T. Lucretius Carus",
+    "tradition": "natural_magic",
+    "url": "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml",
+    "notes": "Book I: materialist cosmology — atoms, void, anti-providential; the anti-magical foil for Renaissance Platonists"
+  },
+  {
+    "filename": "lucretius_drn_iii.txt",
+    "title": "De Rerum Natura Liber III",
+    "author": "T. Lucretius Carus",
+    "tradition": "natural_magic",
+    "url": "https://www.thelatinlibrary.com/lucretius/lucretius3.shtml",
+    "notes": "Book III: on the soul — mortality argument, against fear of death; anti-necromantic"
+  },
+  {
+    "filename": "manilius_astronomica_i.txt",
+    "title": "Astronomica Liber I",
+    "author": "M. Manilius",
+    "tradition": "astrological",
+    "url": "https://www.thelatinlibrary.com/manilius1.html",
+    "notes": "Book I: poetic astrology — zodiac, planets, their natures; key for astrological magic"
+  },
+  {
+    "filename": "manilius_astronomica_ii.txt",
+    "title": "Astronomica Liber II",
+    "author": "M. Manilius",
+    "tradition": "astrological",
+    "url": "https://www.thelatinlibrary.com/manilius2.html",
+    "notes": "Book II: signs, decans, dodecatemoria; elaborates astrological influence doctrine"
+  },
+  {
+    "filename": "manilius_astronomica_iv.txt",
+    "title": "Astronomica Liber IV",
+    "author": "M. Manilius",
+    "tradition": "astrological",
+    "url": "https://www.thelatinlibrary.com/manilius4.html",
+    "notes": "Book IV: zodiacal influences on human character — horoscopic astrology, paranatellonta"
+  },
+  {
+    "filename": "juvenal_satira_vi.txt",
+    "title": "Satira VI",
+    "author": "D. Iunius Iuvenalis",
+    "tradition": "folk_magic",
+    "url": "https://www.thelatinlibrary.com/juvenal/6.shtml",
+    "notes": "Satire 6: women and magic — astrologers, Chaldaeans, exorcists, poisoners in imperial Rome"
+  },
+  {
+    "filename": "cicero_de_natura_deorum_i.txt",
+    "title": "De Natura Deorum Liber I",
+    "author": "M. Tullius Cicero",
+    "tradition": "classification",
+    "url": "https://www.thelatinlibrary.com/cicero/nd1.shtml",
+    "notes": "Book I: Epicurean theology — gods as non-interventionist; Stoic and Academic views on divine nature"
+  },
+  {
+    "filename": "cicero_de_natura_deorum_ii.txt",
+    "title": "De Natura Deorum Liber II",
+    "author": "M. Tullius Cicero",
+    "tradition": "classification",
+    "url": "https://www.thelatinlibrary.com/cicero/nd2.shtml",
+    "notes": "Book II: Stoic theology — providential universe, divination as consequence; key for Cicero on natural theology"
+  },
+  {
+    "filename": "ovid_fasti_i.txt",
+    "title": "Fastorum Liber I",
+    "author": "P. Ovidius Naso",
+    "tradition": "folk_magic",
+    "url": "https://www.thelatinlibrary.com/ovid/ovid.fasti1.shtml",
+    "notes": "Fasti Book I: January ritual calendar — Janus, Lemuralia precursors, Roman religious magic"
+  },
+  {
+    "filename": "ovid_fasti_v.txt",
+    "title": "Fastorum Liber V",
+    "author": "P. Ovidius Naso",
+    "tradition": "folk_magic",
+    "url": "https://www.thelatinlibrary.com/ovid/ovid.fasti5.shtml",
+    "notes": "Fasti Book V: Lemuralia (May 9,11,13) — exorcism ritual for domestic ghosts (lemures)"
+  },
+  {
+    "filename": "tacitus_annals_iv.txt",
+    "title": "Annalium Liber IV",
+    "author": "P. Cornelius Tacitus",
+    "tradition": "folk_magic",
+    "url": "https://www.thelatinlibrary.com/tacitus/tac.ann4.shtml",
+    "notes": "Annals IV: astrologers and magic practitioners prosecuted under Tiberius"
+  },
+  {
+    "filename": "seneca_oedipus.txt",
+    "title": "Oedipus",
+    "author": "L. Annaeus Seneca",
+    "tradition": "divination",
+    "url": "https://www.thelatinlibrary.com/sen/sen.oedipus.shtml",
+    "notes": "Oedipus — Tiresias divination scene, Laius's ghost raised; major necromancy and divination text"
+  },
+  {
+    "filename": "pliny_nh_praefatio.txt",
+    "title": "Naturalis Historia Praefatio",
+    "author": "C. Plinius Secundus",
+    "tradition": "natural_magic",
+    "url": "http://www.thelatinlibrary.com/pliny.nhpr.html",
+    "notes": "Preface — Pliny's dedicatory epistle to Vespasian, scope of the work; cited in all natural magic literature"
+  },
+  {
+    "filename": "lucan_pharsalia_v.txt",
+    "title": "Belli Civilis Liber V",
+    "author": "M. Annaeus Lucanus",
+    "tradition": "divination",
+    "url": "https://www.thelatinlibrary.com/lucan/lucan5.shtml",
+    "notes": "Book V: Appius consults the Delphic oracle — divination scene before Pharsalus"
+  },
+  {
+    "filename": "apuleius_de_mundo.txt",
+    "title": "De Mundo",
+    "author": "L. Apuleius Madaurensis",
+    "tradition": "neoplatonic",
+    "url": "https://www.thelatinlibrary.com/apuleius/apuleius.mundo.shtml",
+    "notes": "De Mundo — Apuleius's adaptation of Pseudo-Aristotle's cosmology, daemons as world-governors"
+  },
+  {
+    "filename": "ovid_remedia_amoris.txt",
+    "title": "Remedia Amoris",
+    "author": "P. Ovidius Naso",
+    "tradition": "folk_magic",
+    "url": "https://www.thelatinlibrary.com/ovid/ovid.rem.shtml",
+    "notes": "Remedies for Love — counter to love magic, herbalism for unlove; Ovid as both magician and anti-magician"
+  },
+  {
+    "filename": "vergil_georgica_i.txt",
+    "title": "Georgicorum Liber I",
+    "author": "P. Vergilius Maro",
+    "tradition": "natural_magic",
+    "url": "https://www.thelatinlibrary.com/vergil/geo1.shtml",
+    "notes": "Georgics Book I: omens, weather-signs, prodigies; agricultural divination and natural magic"
+  },
+  {
+    "filename": "seneca_thyestes.txt",
+    "title": "Thyestes",
+    "author": "L. Annaeus Seneca",
+    "tradition": "demonology",
+    "url": "https://www.thelatinlibrary.com/sen/sen.thyestes.shtml",
+    "notes": "Thyestes — Tantalus summoned from underworld, necromancy opening, Atreus's forbidden feast"
+  },
+  {
+    "filename": "isidore_etym_ix.txt",
+    "title": "Etymologiarum Liber IX",
+    "author": "Isidorus Hispalensis",
+    "tradition": "classification",
+    "url": "https://www.thelatinlibrary.com/isidore/9.shtml",
+    "notes": "Book 9: Languages and peoples — Hebrew as divine language, Babel, linguistic taxonomy"
+  },
+  {
+    "filename": "augustine_confessiones_vii.txt",
+    "title": "Confessionum Liber VII",
+    "author": "Aurelius Augustinus",
+    "tradition": "neoplatonic",
+    "url": "https://www.thelatinlibrary.com/augustine/conf7.shtml",
+    "notes": "Confessions VII: Augustine reads the Platonists — vision of God, the soul's ascent, pride of Neoplatonism"
+  },
+  {
+    "filename": "horace_carmina_iii.txt",
+    "title": "Carminum Liber III",
+    "author": "Q. Horatius Flaccus",
+    "tradition": "folk_magic",
+    "url": "https://www.thelatinlibrary.com/horace/carm3.shtml",
+    "notes": "Odes III — III.13 Fons Bandusiae (spring ritual); III.4 Muses/Fate; various ritual and religious themes"
+  }
+]

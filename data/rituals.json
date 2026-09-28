@@ -1,0 +1,274 @@
+{
+  "ars-notoria-prayer": {
+    "id": "ars-notoria-prayer",
+    "title": "The First Notory Prayer",
+    "source": "Ars Notoria",
+    "tradition": "angelic magic",
+    "xp": 60,
+    "description": "A seven-step prayer sequence from the Ars Notoria, performed to petition divine illumination of the mind. The practitioner must be in a state of purity, fasting from the previous evening.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Preparation",
+        "latin": "Mundamini et estote mundi, et abstinete a vino et carne per totum diem ante operationem.",
+        "english": "Purify yourselves and be pure, and abstain from wine and meat for the whole day before the operation.",
+        "action": "Abstain from food and drink from sundown. Wear clean white clothing. Light a single white candle.",
+        "scaffold_low": "Abstain from food and drink from sundown. Wear clean white clothing. Light a single white candle.",
+        "scaffold_med": "Read the Latin instruction, then perform the purification rite.",
+        "scaffold_high": "Peragite praeparationem secundum textum.",
+        "type": "preparation"
+      },
+      {
+        "step": 2,
+        "title": "Opening Invocation",
+        "latin": "O Deus munde et immense, qui ab initio omnia creasti, exaudi preces meas et illumina intellectum meum.",
+        "english": "O God, pure and immense, who created all things from the beginning, hear my prayers and illuminate my intellect.",
+        "action": "Stand facing East. Speak the Latin words aloud three times, slowly, contemplating each word.",
+        "scaffold_low": "Stand facing East. Speak the Latin words aloud three times, slowly, contemplating each word.",
+        "scaffold_med": "Face East. Pronounce the oration three times.",
+        "scaffold_high": "Recita orationem ter versus orientem.",
+        "type": "prayer"
+      },
+      {
+        "step": 3,
+        "title": "The Figure of Art",
+        "latin": "Contemplare figuram hanc et in mente tua eam imprime, ut sigillum in cera.",
+        "english": "Contemplate this figure and imprint it in your mind, as a seal in wax.",
+        "action": "Gaze at the geometric figure for at least one minute without blinking. Do not name it aloud.",
+        "scaffold_low": "Gaze at the geometric figure for at least one minute without blinking. Do not name it aloud.",
+        "scaffold_med": "Imprint the figure. Contemplate in silence.",
+        "scaffold_high": "Imprime figuram in mente. Tace.",
+        "type": "visualization",
+        "figure": "◈"
+      },
+      {
+        "step": 4,
+        "title": "The Petition for Memory",
+        "latin": "Da mihi, Domine, memoriam firmam, intellectum acutum et sapientiam perfectam in omnibus artibus et scientiis.",
+        "english": "Give me, O Lord, a firm memory, a keen intellect, and perfect wisdom in all arts and sciences.",
+        "action": "Kneel. Speak this petition aloud. Pause in silence afterward and attend to any inward illumination.",
+        "scaffold_low": "Kneel. Speak this petition aloud. Pause in silence afterward and attend to any inward illumination.",
+        "scaffold_med": "Recita petitionem in genibus. Audi post silentium.",
+        "scaffold_high": "Ora in genibus.",
+        "type": "prayer"
+      },
+      {
+        "step": 5,
+        "title": "The Divine Names",
+        "latin": "Adiuro te per Adonai, Elohim, El, Sadai, Elion, Escherion, Ioth, Agla, et per omnia nomina tua sancta.",
+        "english": "I adjure you by Adonai, Elohim, El, Sadai, Elion, Escherion, Ioth, Agla, and by all your holy names.",
+        "action": "Pronounce each divine name separately, with a pause between each. Do not rush. These names carry power in their syllables.",
+        "scaffold_low": "Pronounce each divine name separately, with a pause between each. Do not rush. These names carry power in their syllables.",
+        "scaffold_med": "Recita nomina divina distincte.",
+        "scaffold_high": "Recita nomina.",
+        "type": "divine-names"
+      },
+      {
+        "step": 6,
+        "title": "The Great Oration",
+        "latin": "Per haec sancta nomina et per virtutem omnium angelorum et archapgelorum, mitte spiritum tuum sanctum qui illuminet animam meam et intellectum meum.",
+        "english": "By these holy names and by the power of all angels and archangels, send your holy spirit who may illuminate my soul and my intellect.",
+        "action": "Extend both hands, palms upward. Speak the oration. Remain in this posture in silence for three minutes.",
+        "scaffold_low": "Extend both hands, palms upward. Speak the oration. Remain in this posture in silence for three minutes.",
+        "scaffold_med": "Extende manus. Recita. Mane in silentio.",
+        "scaffold_high": "Ora cum manibus extensis.",
+        "type": "prayer"
+      },
+      {
+        "step": 7,
+        "title": "Closing and Gratitude",
+        "latin": "Gratias tibi ago, Domine Deus, qui haec dona tua mihi praebere dignatus es. Fiat voluntas tua.",
+        "english": "I give thanks to you, Lord God, who have deigned to extend these gifts to me. May your will be done.",
+        "action": "Extinguish the candle with your fingers (not blown). The smoke carries the prayer upward. Write down any thoughts or images that arose during the rite.",
+        "scaffold_low": "Extinguish the candle with your fingers (not blown). The smoke carries the prayer upward. Write down any thoughts or images that arose during the rite.",
+        "scaffold_med": "Extinque candelam digitis. Scribe visiones.",
+        "scaffold_high": "Extingue. Scribe.",
+        "type": "closing"
+      }
+    ]
+  },
+  "ficino-solar": {
+    "id": "ficino-solar",
+    "title": "Ficino's Solar Invocation",
+    "source": "De Vita Libri Tres, Book III",
+    "tradition": "natural magic",
+    "xp": 75,
+    "description": "A five-step Ficinian solar ritual for drawing the gifts of the Sun: strength, clarity, authority, and the golden light of the intellect. Performed at sunrise on Sunday.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Election of Time",
+        "latin": "Elige horam in qua Sol in ascendente est, et dies Solis, id est Dominicam.",
+        "english": "Choose the hour in which the Sun is in the ascendant, and the day of the Sun, that is, Sunday.",
+        "action": "Perform this ritual on a Sunday, at sunrise if possible. The Sun's hour on Sunday begins at dawn. If you cannot observe sunrise, any morning hour will serve.",
+        "scaffold_low": "Perform this ritual on a Sunday, at sunrise if possible. The Sun's hour on Sunday begins at dawn. If you cannot observe sunrise, any morning hour will serve.",
+        "scaffold_med": "Elige Dominicam horam, praeferabiliter ad ortum solis.",
+        "scaffold_high": "Elige horam.",
+        "type": "preparation"
+      },
+      {
+        "step": 2,
+        "title": "Solar Correspondences",
+        "latin": "Porta aurum vel chrysolithum, odora thus et cinnamomum, vestire colore aureo vel saffranino.",
+        "english": "Wear gold or chrysolite, smell frankincense and cinnamon, dress in golden or saffron color.",
+        "action": "Wear anything gold (jewelry, fabric, even a yellow thread). Light frankincense incense. If possible, add cinnamon. These are the materials that share the nature of the Sun and draw its influence.",
+        "scaffold_low": "Wear anything gold (jewelry, fabric, even a yellow thread). Light frankincense incense. If possible, add cinnamon. These are the materials that share the nature of the Sun and draw its influence.",
+        "scaffold_med": "Gestat aurum. Accende thus. Vestire colore solis.",
+        "scaffold_high": "Orna te secundum Solem.",
+        "type": "preparation"
+      },
+      {
+        "step": 3,
+        "title": "The Gaze",
+        "latin": "Respice Solem per breve tempus, non diu, et dic: Salve, Sol, pater lucis et vitae.",
+        "english": "Look briefly at the Sun, not long, and say: Hail, Sun, father of light and life.",
+        "action": "Look briefly toward the sun (do not stare — even an ancient would know better). Face its direction. Speak the words aloud in a clear, confident voice.",
+        "scaffold_low": "Look briefly toward the sun (do not stare — even an ancient would know better). Face its direction. Speak the words aloud in a clear, confident voice.",
+        "scaffold_med": "Respice breviter. Recita salutationem.",
+        "scaffold_high": "Saluta Solem.",
+        "type": "action"
+      },
+      {
+        "step": 4,
+        "title": "The Solar Prayer",
+        "latin": "O Sol, anima mundi vicarie, calor et lux et vita omnium, infunde in me spiritum tuum aureum et dona tua: sanitatem, claritatem mentis, auctoritatem et robur.",
+        "english": "O Sun, vicar of the world-soul, heat and light and life of all things, pour into me your golden spirit and your gifts: health, clarity of mind, authority, and strength.",
+        "action": "Stand in sunlight if possible, or before the window. Arms slightly raised and open. Speak this prayer three times with full intention. Between each repetition, breathe deeply.",
+        "scaffold_low": "Stand in sunlight if possible, or before the window. Arms slightly raised and open. Speak this prayer three times with full intention. Between each repetition, breathe deeply.",
+        "scaffold_med": "Recita in luce solis ter. Respira inter repetitiones.",
+        "scaffold_high": "Recita ter. Intende.",
+        "type": "prayer"
+      },
+      {
+        "step": 5,
+        "title": "The Sealing",
+        "latin": "Haec dona quae a Sole percepi, in me maneant et in operibus meis appareant. Gratias ago.",
+        "english": "May these gifts which I have received from the Sun remain in me and appear in my works. I give thanks.",
+        "action": "Touch your forehead, your chest, and your solar plexus in sequence, saying the Latin or its English. This seals the received influence in the three centers of intellect, heart, and vital spirit. The ritual is complete.",
+        "scaffold_low": "Touch your forehead, your chest, and your solar plexus in sequence, saying the Latin or its English. This seals the received influence in the three centers of intellect, heart, and vital spirit. The ritual is complete.",
+        "scaffold_med": "Tange frontem, pectus, epigastrium. Recita clausulam.",
+        "scaffold_high": "Signa tria centra. Conclude.",
+        "type": "closing"
+      }
+    ]
+  },
+  "solomonic-circle": {
+    "id": "solomonic-circle",
+    "title": "The Solomonic Circle",
+    "source": "Clavicula Salomonis / Heptameron",
+    "tradition": "solomonic",
+    "xp": 90,
+    "description": "The foundational protective ritual of the Solomonic tradition — the casting and consecration of the magic circle. No spirit operation may safely proceed without it. This is a practice ritual: perform it as meditation and study.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Choose the Day and Hour",
+        "latin": "Eligatur dies et hora secundum naturam operis: dies Lunae pro aqua, dies Martis pro igne, dies Mercurii pro arte, dies Iovis pro honore, dies Veneris pro amore, dies Saturni pro morte, dies Solis pro vita.",
+        "english": "Let the day and hour be chosen according to the nature of the work: Monday for water, Tuesday for fire, Wednesday for art, Thursday for honor, Friday for love, Saturday for death, Sunday for life.",
+        "action": "Determine your purpose for the operation. Note today's day and planetary hour. Reflect on which planetary governor is appropriate for your intent.",
+        "scaffold_low": "Determine your purpose for the operation. Note today's day and planetary hour. Reflect on which planetary governor is appropriate for your intent.",
+        "scaffold_med": "Elige diem et horam secundum intentionem tuam.",
+        "scaffold_high": "Elige tempora.",
+        "type": "preparation"
+      },
+      {
+        "step": 2,
+        "title": "Purification",
+        "latin": "Purgato corpore et anima, ieiunato, confessio si fieri potest, et lava manus in aqua salsa ante omnem operationem.",
+        "english": "With body and soul purified, having fasted, with confession if possible, and wash your hands in salt water before every operation.",
+        "action": "Wash your hands deliberately with salted water. As you do, say: 'Asperges me, Domine, hyssopo et mundabor' (Cleanse me, Lord, with hyssop and I shall be purified). This is preparatory purification.",
+        "scaffold_low": "Wash your hands deliberately with salted water. As you do, say: 'Asperges me, Domine, hyssopo et mundabor' (Cleanse me, Lord, with hyssop and I shall be purified). This is preparatory purification.",
+        "scaffold_med": "Lava manus. Recita 'Asperges me.'",
+        "scaffold_high": "Purifica te.",
+        "type": "preparation"
+      },
+      {
+        "step": 3,
+        "title": "Draw the Circle",
+        "latin": "In terra vel in papyro describe circulum spatio novem pedum, et in eo inscribe quatuor nomina Dei ad quatuor plagas mundi: ad orientem IHVH, ad meridiem ADONAI, ad occidentem EHEIEH, ad septentrionem AGLA.",
+        "english": "On the ground or on paper, describe a circle of nine feet, and in it inscribe the four names of God at the four quarters of the world: to the East IHVH, to the South ADONAI, to the West EHEIEH, to the North AGLA.",
+        "action": "Draw or imagine a circle around your working space. Mark or visualize the four divine names at the cardinal points. This circle defines sacred, protected space separated from the profane world.",
+        "scaffold_low": "Draw or imagine a circle around your working space. Mark or visualize the four divine names at the cardinal points. This circle defines sacred, protected space separated from the profane world.",
+        "scaffold_med": "Describe circulum. Inscribe nomina divina ad quatuor plagas.",
+        "scaffold_high": "Describe et inscribe.",
+        "type": "ritual-action"
+      },
+      {
+        "step": 4,
+        "title": "Consecrate the Circle",
+        "latin": "Consecro et benedico hunc circulum per nomina Dei vivi et veri: AGLA, ADONAI, IHVH, sit hic locus benedictus et consecratus.",
+        "english": "I consecrate and bless this circle by the names of the living and true God: AGLA, ADONAI, IHVH, let this place be blessed and consecrated.",
+        "action": "Walk the perimeter of your circle clockwise three times, speaking the consecration at each quarter. This activates the circle as a sealed sacred space. Spirits cannot enter without permission; you cannot depart without formal license.",
+        "scaffold_low": "Walk the perimeter of your circle clockwise three times, speaking the consecration at each quarter. This activates the circle as a sealed sacred space. Spirits cannot enter without permission; you cannot depart without formal license.",
+        "scaffold_med": "Ambula circulum ter dextrorsum. Recita consecrationem.",
+        "scaffold_high": "Consecra circulum ambulando.",
+        "type": "ritual-action"
+      },
+      {
+        "step": 5,
+        "title": "The License to Depart",
+        "latin": "Ite in pace ad loca vestra, et pax sit inter nos et vos, parati ad venientem vocationem. In nomine Patris et Filii et Spiritus Sancti. Amen.",
+        "english": "Go in peace to your places, and let there be peace between us and you, ready for the coming call. In the name of the Father and of the Son and of the Holy Spirit. Amen.",
+        "action": "Speak this as the closing of any spirit operation, or as the formal closure of the circle working. Walk the circle counterclockwise once to dismantle it. The working is complete. Ground yourself by touching the earth.",
+        "scaffold_low": "Speak this as the closing of any spirit operation, or as the formal closure of the circle working. Walk the circle counterclockwise once to dismantle it. The working is complete. Ground yourself by touching the earth.",
+        "scaffold_med": "Recita licentiam. Ambula sinistrorsum. Dissolve circulum.",
+        "scaffold_high": "Da licentiam. Dissolve.",
+        "type": "closing"
+      }
+    ]
+  },
+  "picatrix-planetary": {
+    "id": "picatrix-planetary",
+    "title": "Picatrix: Planetary Election",
+    "source": "Picatrix, Book II",
+    "tradition": "astrological",
+    "xp": 50,
+    "description": "A four-step method for timing magical operations according to planetary elections, following the Picatrix's astrological system.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Identify the Planet",
+        "latin": "Primo cognoscas quod planeta tuo operi praesidet: Saturnus rebus antiquis et mortis, Iupiter iustitiae et honoris, Mars victoriae et discordiae, Sol vitae et regum, Venus amoris, Mercurius scientiae et artium, Luna aquarum et viarum.",
+        "english": "First know which planet presides over your work: Saturn over ancient things and death, Jupiter over justice and honor, Mars over victory and discord, the Sun over life and kings, Venus over love, Mercury over science and arts, the Moon over waters and journeys.",
+        "action": "Identify which planet governs your intended purpose using the traditional planetary correspondences above. Write down your chosen planet.",
+        "scaffold_low": "Identify which planet governs your intended purpose using the traditional planetary correspondences above. Write down your chosen planet.",
+        "scaffold_med": "Elige planetam secundum naturam operis.",
+        "scaffold_high": "Cognosce planetam.",
+        "type": "preparation"
+      },
+      {
+        "step": 2,
+        "title": "Wait for the Auspicious Hour",
+        "latin": "Expecta horam in qua planeta tuus fortis est: hoc fit quando est in domo sua, in exaltatione sua, in triplicitate sua, et quando non est combustus, retrogradus, vel impeditus.",
+        "english": "Wait for the hour in which your planet is strong: this occurs when it is in its own house, in its exaltation, in its triplicity, and when it is not combust, retrograde, or impeded.",
+        "action": "Consult an astrological chart or ephemeris. Look for your planet in a dignified position. At minimum, avoid times when it is retrograde or combust (too close to the Sun). Dawn and dusk are traditionally strong times.",
+        "scaffold_low": "Consult an astrological chart or ephemeris. Look for your planet in a dignified position. At minimum, avoid times when it is retrograde or combust (too close to the Sun). Dawn and dusk are traditionally strong times.",
+        "scaffold_med": "Inspice astrologiam. Expecta horam idoneam.",
+        "scaffold_high": "Elige horam.",
+        "type": "preparation"
+      },
+      {
+        "step": 3,
+        "title": "Prepare the Correspondences",
+        "latin": "Para res quas planeta tuus amat: colorem, metallum, herbas, fumigationem, lapides, et animalia eius.",
+        "english": "Prepare the things which your planet loves: its color, its metal, its herbs, its fumigation, its stones, and its animals.",
+        "action": "Gather materials corresponding to your planet: for example, for Jupiter — tin, blue cloth, cedar incense, sapphire or lapis lazuli, oak leaves. Arrange them around your working space to concentrate the planetary influence.",
+        "scaffold_low": "Gather materials corresponding to your planet: for example, for Jupiter — tin, blue cloth, cedar incense, sapphire or lapis lazuli, oak leaves. Arrange them around your working space to concentrate the planetary influence.",
+        "scaffold_med": "Para materias correspondentes planeatae tuae.",
+        "scaffold_high": "Para correspondentias.",
+        "type": "preparation"
+      },
+      {
+        "step": 4,
+        "title": "The Petition",
+        "latin": "In hora electa, cum omnibus praeparatis, vocas virtutem planetae in hanc materiam, dicens ei nomen et munus eius, et petens opus tuum.",
+        "english": "In the elected hour, with all preparations made, you call the power of the planet into this matter, speaking its name and its office, and petitioning your work.",
+        "action": "In the elected hour, face the direction of the planet if known, or its cardinal direction (Sun = East, Moon = West, Saturn = North, Jupiter = East/above, etc.). Speak the planet's name and your petition aloud, clearly stating your purpose. Conclude with gratitude.",
+        "scaffold_low": "In the elected hour, face the direction of the planet if known, or its cardinal direction. Speak the planet's name and your petition aloud, clearly stating your purpose. Conclude with gratitude.",
+        "scaffold_med": "In hora electa, voca planetam. Peta opus tuum.",
+        "scaffold_high": "Voca. Peta.",
+        "type": "prayer"
+      }
+    ]
+  }
+}

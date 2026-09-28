@@ -1,0 +1,222 @@
+{
+  "operations": [
+    {
+      "id": "calcinatio",
+      "name": "Calcinatio",
+      "english": "Calcination",
+      "description": "The reduction of a substance to ash or powder by sustained heat. Corresponds to Fire. Destroys the fixed, releases the volatile.",
+      "latin_desc": "Calcinatio est operatio qua corpus in calcem vel cinerem redigitur per ignis actionem continuatam. Per hanc operationem fixum destruitur et volatile liberatur.",
+      "symbol": "🔥",
+      "element": "fire"
+    },
+    {
+      "id": "solutio",
+      "name": "Solutio",
+      "english": "Dissolution",
+      "description": "The dissolving of a solid substance in a liquid solvent. Corresponds to Water. What was fixed becomes fluid, what was hidden is revealed.",
+      "latin_desc": "Solutio est operatio qua solidum in liquorem resolvitur. Quod erat fixum, fluidum fit; quod occultum erat, revelatur.",
+      "symbol": "💧",
+      "element": "water"
+    },
+    {
+      "id": "separatio",
+      "name": "Separatio",
+      "english": "Separation",
+      "description": "The separation of the pure from the impure, the subtle from the gross. Corresponds to Air. The three principles (Sulfur, Mercury, Salt) are distinguished.",
+      "latin_desc": "Separatio est operatio qua purum ab impuro, subtile a spisso separatur. Tria principia — Sulphur, Mercurius, Sal — distinguuntur.",
+      "symbol": "🌬️",
+      "element": "air"
+    },
+    {
+      "id": "coniunctio",
+      "name": "Coniunctio",
+      "english": "Conjunction",
+      "description": "The union of opposites: male and female, Sol and Luna, Sulfur and Mercury. The hierosgamos of alchemy, producing the hermaphroditic Stone.",
+      "latin_desc": "Coniunctio est unio oppositorum: masculi et feminae, Solis et Lunae, Sulphuris et Mercurii. Est hierosgamos alchymiae, ex quo lapis hermaphroditus producitur.",
+      "symbol": "☿",
+      "element": "all"
+    },
+    {
+      "id": "fermentatio",
+      "name": "Fermentatio",
+      "english": "Fermentation",
+      "description": "The introduction of a spiritualizing agent (the ferment) that transforms the entire substance. Like yeast in bread, the ferment works invisibly.",
+      "latin_desc": "Fermentatio est operatio qua fermentum spiritualizans in corpus introducitur quod totam substantiam transformet. Ut fermentum in pane, sic lapis fermentat.",
+      "symbol": "⚗️",
+      "element": "earth"
+    },
+    {
+      "id": "distillatio",
+      "name": "Distillatio",
+      "english": "Distillation",
+      "description": "The purification by repeated vaporization and condensation. The spirit rises and falls, becoming ever purer. Corresponds to the philosophical Mercury.",
+      "latin_desc": "Distillatio est purificatio per vaporationem et condensationem iteratas. Spiritus ascendit et descendit, semper purior factus. Respondet Mercurio philosophico.",
+      "symbol": "🌡️",
+      "element": "air"
+    },
+    {
+      "id": "coagulatio",
+      "name": "Coagulatio",
+      "english": "Coagulation",
+      "description": "The fixation of the volatile, the embodiment of the spirit. What was fluid becomes solid, permanently. The final sealing of the Stone's power.",
+      "latin_desc": "Coagulatio est fixatio volatilis, incorporatio spiritus. Quod fluidum erat, solidum fit permanenter. Est sigillatio ultima potentiae lapidis.",
+      "symbol": "💎",
+      "element": "earth"
+    }
+  ],
+  "substances": [
+    {
+      "id": "sulphur",
+      "name": "Sulphur Philosophorum",
+      "english": "Philosophical Sulfur",
+      "description": "The active, fiery, solar principle. Not common sulfur, but the sulfurous spirit hidden in all metals — the principle of fixity and color.",
+      "latin_desc": "Sulphur philosophicum est principium activum, igneum, solare. Non est sulphur commune, sed spiritus sulphureus in omnibus metallis latens.",
+      "symbol": "🜍",
+      "type": "principle"
+    },
+    {
+      "id": "mercurius",
+      "name": "Mercurius Philosophorum",
+      "english": "Philosophical Mercury",
+      "description": "The passive, volatile, lunar principle. The dissolving water, the universal solvent, the spirit that mediates between body and soul.",
+      "latin_desc": "Mercurius philosophicus est principium passivum, volatile, lunare. Aqua dissolvens, menstruum universale, spiritus inter corpus et animam medians.",
+      "symbol": "☿",
+      "type": "principle"
+    },
+    {
+      "id": "sal",
+      "name": "Sal Philosophorum",
+      "english": "Philosophical Salt",
+      "description": "The body, the earth, the principle of fixity and resistance. The matrix in which Sulfur and Mercury combine. Paracelsus added this as the third principle.",
+      "latin_desc": "Sal philosophicum est corpus, terra, principium fixitatis et resistentiae. Matrix in qua Sulphur et Mercurius coniguntur. Paracelsus hoc tertium principium addidit.",
+      "symbol": "🜔",
+      "type": "principle"
+    },
+    {
+      "id": "plumbum",
+      "name": "Plumbum",
+      "english": "Lead",
+      "description": "The base metal of Saturn, cold and heavy. The prima materia of alchemical work, associated with the prima materia of Creation itself.",
+      "latin_desc": "Plumbum est metallum Saturni, frigidum et grave. Prima materia operis alchymici, primae materiae Creationis associatum.",
+      "symbol": "♄",
+      "type": "metal",
+      "planet": "saturn"
+    },
+    {
+      "id": "ferrum",
+      "name": "Ferrum",
+      "english": "Iron",
+      "description": "The metal of Mars, hard and martial. Rules blood, weapons, and the vital heat of organisms. More resistant to transmutation than lead.",
+      "latin_desc": "Ferrum est metallum Martis, durum et martiale. Sanguini, armis et calori vitali praesidet.",
+      "symbol": "♂",
+      "type": "metal",
+      "planet": "mars"
+    },
+    {
+      "id": "cuprum",
+      "name": "Cuprum",
+      "english": "Copper",
+      "description": "The metal of Venus, the most beautiful of the base metals. Rules love, harmony, and the generative power of nature.",
+      "latin_desc": "Cuprum est metallum Veneris, pulcherrimum ex metallis imperfectis. Amori, harmoniae et vi generativae naturae praesidet.",
+      "symbol": "♀",
+      "type": "metal",
+      "planet": "venus"
+    },
+    {
+      "id": "argentum",
+      "name": "Argentum",
+      "english": "Silver",
+      "description": "The metal of the Moon, almost perfect. Pure silver is one step from gold and bears the nature of the lunar Mercury.",
+      "latin_desc": "Argentum est metallum Lunae, propemodum perfectum. Argentum purum uno gradu distat ab auro et naturam Mercurii lunaris gerit.",
+      "symbol": "☽",
+      "type": "metal",
+      "planet": "moon"
+    },
+    {
+      "id": "aurum",
+      "name": "Aurum",
+      "english": "Gold",
+      "description": "The perfect metal of the Sun. The philosopher's goal is not gold but the process that produces it — the Stone which can transmute all base metals into gold.",
+      "latin_desc": "Aurum est metallum perfectum Solis. Finis philosophi non est aurum sed processus qui id producit — lapis qui omnia metalla imperfecta in aurum transmutare valet.",
+      "symbol": "☉",
+      "type": "metal",
+      "planet": "sun"
+    },
+    {
+      "id": "vitriolum",
+      "name": "Vitriolum",
+      "english": "Vitriol",
+      "description": "Green vitriol (iron sulfate) or blue vitriol (copper sulfate). The acid that dissolves metals, an agent of Solutio. Its alchemical acronym: Visita Interiora Terrae Rectificando Invenies Occultum Lapidem.",
+      "latin_desc": "Vitriolum viride vel caeruleum. Acidum quod metalla dissolvit. Acronymum alchymicum: Visita Interiora Terrae Rectificando Invenies Occultum Lapidem.",
+      "symbol": "🜁",
+      "type": "reagent"
+    },
+    {
+      "id": "nitrum",
+      "name": "Nitrum",
+      "english": "Niter / Saltpeter",
+      "description": "Potassium nitrate, the fire-salt. Used in Calcinatio and Fermentatio. Associated with the fiery explosive power in the earth.",
+      "latin_desc": "Nitrum est sal ignis. In calcinatione et fermentatione adhibetur. Vi explosivae igneae in terra associatur.",
+      "symbol": "🜃",
+      "type": "reagent"
+    }
+  ],
+  "combinations": [
+    {
+      "substance": "plumbum", "operation": "calcinatio",
+      "result": "calx_plumbi", "result_name": "Calx Plumbi (Lead Ash)",
+      "xp": 10,
+      "description": "Lead calcined to its ash — a grey-white powder. The first step in working with Saturn's metal. The fixed nature of lead is broken, releasing its spirit.",
+      "latin_result": "Plumbum calcinatum in pulverem cinereum album conversum est. Prima gradus in opere Saturnino."
+    },
+    {
+      "substance": "plumbum", "operation": "solutio",
+      "result": "plumbum_solutum", "result_name": "Plumbum Solutum (Dissolved Lead)",
+      "xp": 8,
+      "description": "Lead dissolved in acid — becomes minium (red lead) when further worked. The Solutio of lead is an important step in the white work.",
+      "latin_result": "Plumbum in acidum solutum est et in minium conversuri sumus."
+    },
+    {
+      "substance": "ferrum", "operation": "calcinatio",
+      "result": "mars_tinctura", "result_name": "Mars Tinctura (Iron Tincture)",
+      "xp": 12,
+      "description": "Calcined iron yields a red-orange ochre — the blood-color of Mars. This tincture communicates martial virtues and was used in medical operations.",
+      "latin_result": "Ferrum calcinatum ochram rubro-aranteam producit — colorem sanguinis Martis."
+    },
+    {
+      "substance": "sulphur", "operation": "coniunctio",
+      "result": "lapis_inchoatus", "result_name": "Lapis Inchoatus (Begun Stone)",
+      "xp": 20,
+      "description": "The conjunction of Philosophical Sulfur and Mercury is the royal marriage — the first formation of the Stone in its immature state. It must still be fermented and fixed.",
+      "latin_result": "Sulphur et Mercurius philosophici coniuncti sunt in matrimonium regium. Lapis inchoatus formatus est."
+    },
+    {
+      "substance": "mercurius", "operation": "distillatio",
+      "result": "mercurius_rectificatus", "result_name": "Mercurius Rectificatus",
+      "xp": 15,
+      "description": "Mercury rectified by repeated distillation becomes the universal dissolvent — the menstruum that can dissolve even gold. Seven distillations are required.",
+      "latin_result": "Mercurius per distillationes iteratas rectificatus menstruum universale factus est. Septem distillationes requiruntur."
+    },
+    {
+      "substance": "vitriolum", "operation": "solutio",
+      "result": "aqua_viridis", "result_name": "Aqua Viridis (Green Water)",
+      "xp": 10,
+      "description": "Vitriol dissolved in water yields the famous green vitriol solution — a strong acid used to dissolve other metals. The green lion of the alchemists.",
+      "latin_result": "Vitriolum in aquam solutum aquam viridem producit — leonem viridem alchymistarum."
+    },
+    {
+      "substance": "argentum", "operation": "coniunctio",
+      "result": "luna_fixa", "result_name": "Luna Fixa (Fixed Moon)",
+      "xp": 25,
+      "description": "Silver conjoined with Philosophical Sulfur becomes the fixed White Stone — the lesser accomplishment of the opus, able to transmute base metals to silver.",
+      "latin_result": "Argentum cum Sulphure philosophico coniunctum Lapidem Album Fixum producit — opus minus completum."
+    },
+    {
+      "substance": "nitrum", "operation": "fermentatio",
+      "result": "fermentum_igneum", "result_name": "Fermentum Igneum (Fiery Ferment)",
+      "xp": 18,
+      "description": "Niter used as a ferment introduces the fiery aerial spirit into the work — the 'food of fire' that accelerates all transformations.",
+      "latin_result": "Nitrum ut fermentum spiritum igneum aërium in opus introducit — 'cibum ignis' quod omnes transformationes accelerat."
+    }
+  ]
+}
