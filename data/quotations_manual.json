@@ -1,0 +1,23 @@
+{
+  "_instructions": "\n        Add quotations manually using this format.\n        Every field is required except translation and manuscript_reference.\n\n        source_text_slug: slug of the original Latin text (e.g. 'corpus-hermeticum')\n        source_author: author of original text\n        source_work_title: title of original work\n        referenced_in_slug: slug of the scholarly work citing it\n        scholar_name: scholar who discusses this quotation\n        quotation_context: brief context where quotation appears\n        page_reference: page number or location in referenced work\n\n        commentary fields should explain:\n        - linguistic_notes: grammar, vocabulary, word choices\n        - magical_significance: relevance to magical practice\n        - scholar_commentary: main scholarly interpretation\n        ",
+  "quotations": [
+    {
+      "latin_text": "Example Latin quotation text",
+      "translation": "English translation (optional)",
+      "source_text_slug": "original-source-slug",
+      "source_author": "Author of Original Text",
+      "source_work_title": "Original Work Title",
+      "referenced_in_slug": "scholarly-work-slug",
+      "scholar_name": "Scholar Name",
+      "quotation_context": "Context where quotation appears",
+      "page_reference": "p. 42",
+      "linguistic_notes": "Notes on grammar, vocabulary, linguistic features",
+      "magical_significance": "Why this quotation matters magically",
+      "scholar_commentary": "Scholar's interpretation and analysis",
+      "tags": [
+        "tradition:hermeticism",
+        "concept:divine-mind"
+      ]
+    }
+  ]
+}

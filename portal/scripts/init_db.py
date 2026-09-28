@@ -62,6 +62,7 @@ def init_db():
             summary TEXT NOT NULL,
             full_description TEXT,
             key_concepts TEXT,
+            latin_content_extent TEXT,
             tags TEXT,
             source_method TEXT DEFAULT 'SEED_DATA',
             review_status TEXT DEFAULT 'DRAFT' CHECK(review_status IN ('DRAFT','REVIEWED','VERIFIED')),
@@ -161,22 +162,85 @@ def init_db():
         )
     ''')
 
+    # Quotation tables for Latin text collection
+    c.execute('''
+        CREATE TABLE IF NOT EXISTS quotations (
+            id INTEGER PRIMARY KEY,
+            slug TEXT UNIQUE NOT NULL,
+            latin_text TEXT NOT NULL,
+            translation TEXT,
+            source_text_slug TEXT NOT NULL,
+            source_author TEXT,
+            source_work_title TEXT,
+            referenced_in_slug TEXT,
+            scholar_name TEXT,
+            quotation_context TEXT,
+            linguistic_notes TEXT,
+            magical_significance TEXT,
+            page_reference TEXT,
+            scholar_commentary TEXT,
+            tags TEXT,
+            source_method TEXT DEFAULT 'EXTRACTED',
+            review_status TEXT DEFAULT 'DRAFT' CHECK(review_status IN ('DRAFT','REVIEWED','VERIFIED')),
+            confidence TEXT DEFAULT 'MEDIUM' CHECK(confidence IN ('HIGH','MEDIUM','LOW')),
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY(source_text_slug) REFERENCES texts(slug),
+            FOREIGN KEY(referenced_in_slug) REFERENCES texts(slug)
+        )
+    ''')
+
+    c.execute('''
+        CREATE TABLE IF NOT EXISTS quotation_sources (
+            id INTEGER PRIMARY KEY,
+            quotation_id INTEGER NOT NULL,
+            original_source_slug TEXT NOT NULL,
+            page_number TEXT,
+            section TEXT,
+            manuscript_reference TEXT,
+            FOREIGN KEY(quotation_id) REFERENCES quotations(id),
+            FOREIGN KEY(original_source_slug) REFERENCES texts(slug)
+        )
+    ''')
+
+    c.execute('''
+        CREATE TABLE IF NOT EXISTS quotation_commentary (
+            id INTEGER PRIMARY KEY,
+            quotation_id INTEGER NOT NULL,
+            scholar_slug TEXT,
+            scholar_name TEXT,
+            commentary_text TEXT NOT NULL,
+            commentary_type TEXT CHECK(commentary_type IN ('linguistic','magical','historical','textual','comparative')),
+            significance_level TEXT CHECK(significance_level IN ('high','medium','low')),
+            related_concepts TEXT,
+            source_reference TEXT,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY(quotation_id) REFERENCES quotations(id)
+        )
+    ''')
+
     # Create indexes
     c.execute('CREATE INDEX IF NOT EXISTS idx_figures_tradition ON figures(tradition)')
     c.execute('CREATE INDEX IF NOT EXISTS idx_texts_tradition ON texts(tradition)')
     c.execute('CREATE INDEX IF NOT EXISTS idx_texts_year ON texts(publication_year)')
     c.execute('CREATE INDEX IF NOT EXISTS idx_concepts_tradition ON concepts(tradition)')
     c.execute('CREATE INDEX IF NOT EXISTS idx_scholarly_entity ON scholarly_refs(entity_type, entity_slug)')
+    c.execute('CREATE INDEX IF NOT EXISTS idx_quotations_source ON quotations(source_text_slug)')
+    c.execute('CREATE INDEX IF NOT EXISTS idx_quotations_referenced ON quotations(referenced_in_slug)')
+    c.execute('CREATE INDEX IF NOT EXISTS idx_quotations_scholar ON quotations(scholar_name)')
+    c.execute('CREATE INDEX IF NOT EXISTS idx_quotation_commentary ON quotation_commentary(quotation_id)')
 
-    # Record schema version
-    c.execute('INSERT OR REPLACE INTO schema_version (id, version) VALUES (1, 1)')
+    # Record schema version (increment for migration)
+    c.execute('INSERT OR REPLACE INTO schema_version (id, version) VALUES (1, 2)')
 
     conn.commit()
     conn.close()
 
     print(f"✓ Database initialized: {DB_PATH}")
-    print(f"  Tables created: figures, texts, concepts, bibliography, essays, etc.")
+    print(f"  Core tables: figures, texts, concepts, bibliography, essays")
+    print(f"  Quotation tables: quotations, quotation_sources, quotation_commentary")
     print(f"  Indexes created for efficient querying")
+    print(f"  Schema version: 2 (quotations support added)")
 
 if __name__ == '__main__':
     init_db()
