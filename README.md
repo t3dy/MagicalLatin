@@ -2,6 +2,10 @@
 
 A comprehensive platform for studying magical texts in Latin, combining an interactive gamified reader with a scholarly knowledge portal.
 
+**🌐 Live Links:**
+- **Gamified Reader:** https://t3dy.github.io/MagicalLatin/
+- **Knowledge Portal:** https://t3dy.github.io/MagicalLatin/portal/ (texts, authors, concepts, quotations)
+
 ## Features
 
 ### 1. Gamified Latin Reader (`index.html`)
@@ -92,6 +96,66 @@ The portal indexes 445 magical texts from these collections:
 | Others | 22 | Voynich, Bohme, Apuleius, specific authors |
 
 **Total: 445 sources across 21+ traditions**
+
+## Gamified Features in Action
+
+### Example 1: Vocabulary Learning
+```
+Passage: Hermetic Principle of Correspondence
+Latin: "Quod est superius, est sicut quod inferius"
+
+Click "quod" → tooltip shows:
+  Definition: "that which" (relative pronoun)
+  Grammar: Accusative neuter singular
+  Context: Introduces a comparative clause
+  Related: qualis, quantus (other interrogative/relative words)
+
+XP Earned: +3 for learning the word
+Vocabulary Strength: "quod" now at 75% mastery
+```
+
+### Example 2: Ritual Progress
+```
+Ritual: "Invocation of the Divine Name"
+Steps Completed: 3/7
+  ✓ Purification (read passage, +10 XP)
+  ✓ Centering (translated passage, +25 XP)
+  ✓ Vowel-work (completed flashcard, +3 XP)
+  
+Next: Invocation (read next passage)
+Total Progress: 45% → Next level at 100%
+Current Level: 5 "Initiate" → Level 6 "Adept"
+```
+
+### Example 3: Alchemy Lab
+```
+Available Substances: 23
+  • Mercury (Philosophical) - volatility, intellect
+  • Sulfur (Calcinatio) - red, transformative
+  • Salt (Coagulation) - crystalline, foundation
+
+Operations:
+  • Dissolution: Mercury + Text Fragment = Insight
+  • Fermentation: Two concepts + Time = New understanding
+  • Distillation: Purify understanding of a concept
+
+Recent Experiment: 
+  "Dissolution of the Hermetic Principle"
+  Result: Gained fluency in Correspondence Magic (+50 XP)
+```
+
+### Example 4: Knowledge Portal
+```
+Search: "Emerald Tablet"
+Results:
+  • Hermes Trismegistus - Author Page
+  • Owen Davies - Scholar discussing it
+  • "Quod est superius..." - Quotation with commentary
+  • Hermetic Correspondence - Related concept
+  
+Each result links to full scholarly analysis, linguistic notes, 
+magical significance, and bibliographic sources.
+```
 
 ## Stack
 
