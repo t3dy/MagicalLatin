@@ -2,9 +2,9 @@
 
 A comprehensive platform for studying magical texts in Latin, combining an interactive gamified reader with a scholarly knowledge portal.
 
-**🌐 Live Links:**
-- **Gamified Reader:** https://t3dy.github.io/MagicalLatin/
-- **Knowledge Portal:** https://t3dy.github.io/MagicalLatin/portal/ (texts, authors, concepts, quotations)
+**🌐 Live & Local:**
+- **Knowledge Portal (Live):** https://t3dy.github.io/MagicalLatin/ — texts, authors, concepts, quotations
+- **Gamified Reader (Local):** Run locally with `python -m http.server 5180` — filterable passages, vocab tracking, XP/levels, alchemy lab, rituals
 
 ## Features
 
@@ -18,14 +18,16 @@ A comprehensive platform for studying magical texts in Latin, combining an inter
 - **Ritual walkthroughs** with step-by-step guidance
 - **Codex/stats modal** with achievements and progress
 
-### 2. Knowledge Portal (`/portal`)
+### 2. Knowledge Portal
 A scholarly reference portal indexing 445 magical texts from your research library, including:
 - **421 indexed magical texts** from Western esoteric traditions
 - **125 author biographies** (magicians, scholars, philosophers)
 - **18 tradition concepts** (Hermeticism, Kabbalah, Alchemy, Tarot, etc.)
+- **Latin quotations** (4+ exemplars with full scholarly commentary)
 - **Text pages** with metadata, author info, tradition classification
 - **Author pages** with bibliography of their works
 - **Concept pages** mapping traditions across texts
+- **Quotation cards** with linguistic, magical, and scholarly analysis
 
 ## Architecture
 
